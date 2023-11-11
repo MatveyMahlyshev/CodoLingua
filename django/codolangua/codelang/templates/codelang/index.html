@@ -1,5 +1,14 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} 
+{%load static%} 
+<!-- head(links) -->
+{% block link %}
+<link
+  type="text/css"
+  href="{% static 'codelang/css/styles.css' %}"
+  rel="stylesheet"
+/>
+{%endblock%}
+ <!-- <body>  -->
+{% block content %} 
 
 {% endblock %}
