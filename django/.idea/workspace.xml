@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1604790-f20a-4b7b-a7fc-6f543d993cc4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codolangua/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

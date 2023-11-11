@@ -3,8 +3,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Главная страница')
+    data = {'title': 'Главная страница'}
+    return render(request, 'codelang/index.html', context=data)
 
-
-def gang(request):
-    return HttpResponse('Gang')
