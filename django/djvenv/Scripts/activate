@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Python\django\djvenv"
+VIRTUAL_ENV="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\djvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
