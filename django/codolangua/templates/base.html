@@ -5,16 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
-    {% block link %}
-    
-    {%endblock%}
+    {% block link %} {%endblock%}
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html">
-        <span class="logo"><strong>Cod</strong>oL<strong>ing</strong>ua</span>
-      </a>
       <nav class="main-navigation">
+        <a href="index.html">
+          <span class="logo"> &lt;<strong>Cod</strong>oL<strong>ing</strong>ua/&gt;</span>
+        </a>
         <ul class="main-navigation-list">
           <li class="navigation-item"><a href="#">Раздел 1</a></li>
           <li class="navigation-item"><a href="#">Раздел 2</a></li>
@@ -24,5 +22,8 @@
       </nav>
     </header>
     {% block content %} {% endblock %}
+    <footer class="main-footer">
+      &copy;Project For ManagePrgoramProjects
+    </footer>
   </body>
 </html>
