@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1604790-f20a-4b7b-a7fc-6f543d993cc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codolangua/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates" />
+      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\static\codelang\css" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates\codelang" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua" />
     </key>
@@ -61,7 +63,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codolangua/manage.py" />
-      <option name="PARAMETERS" value="runserver" />
+      <option name="PARAMETERS" value="runserver 1111" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
