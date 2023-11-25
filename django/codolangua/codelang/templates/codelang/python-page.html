@@ -2,4 +2,10 @@
 {% block link %}
 {%endblock%}
 {% block content %}
+<main>
+    {% for t in topics %}
+    <a href="#"><h2>{{ t.title }}</h2>
+        <span>{{ t.content}}</span></a>
+    {% endfor%}
+</main>
 {% endblock %}

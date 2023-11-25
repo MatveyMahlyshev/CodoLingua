@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from codelang.models import Topics
+
 
 def index(request):
     data = {'title': 'Главная страница'}
@@ -8,5 +10,7 @@ def index(request):
 
 
 def python(request):
-    data = {'title': 'Теория Python'}
+    topics = Topics.objects.all()
+    data = {'title': 'Теория Python',
+            'topics': topics}
     return render(request, 'codelang/python-page.html', context=data)

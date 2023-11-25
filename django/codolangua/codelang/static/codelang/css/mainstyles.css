@@ -95,6 +95,9 @@ header a {
 }
 /* header end */
 /* main start */
+.title{
+    margin-bottom: 40px;
+}
 .description {
     display: flex;
     justify-content: center;

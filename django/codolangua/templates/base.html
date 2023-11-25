@@ -1,49 +1,53 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{title}}</title>
     {% block link %} {%endblock%}
     <link
-      type="text/css"
-      href="{% static 'codelang/css/mainstyles.css' %}"
-      rel="stylesheet"
+            type="text/css"
+            href="{% static 'codelang/css/mainstyles.css' %}"
+            rel="stylesheet"
     />
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-navigation">
         <a href="{% url 'home' %}">
           <span class="logo">
             &lt;<strong>Cod</strong>oL<strong>ing</strong>ua/&gt;</span
           >
         </a>
         <ul class="main-navigation-list">
-          <li class="navigation-item">
-            <a href="#">Frontend</a>
-            <ul class="dropdown-languages">
-              <li><a href="#">HTML и CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-            </ul>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Backend</a>
-            <ul class="dropdown-languages">
-              <li><a href="{% url 'python' %}">Python</a></li>
-            </ul>
-          </li>
-          <li class="navigation-item"><a href="#">О нас</a></li>
+            <li class="navigation-item">
+                <a href="#">Frontend</a>
+                <ul class="dropdown-languages">
+                    <li><a href="#">HTML и CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li class="navigation-item">
+                <a href="#">Backend</a>
+                <ul class="dropdown-languages">
+                    <li><a href="{% url 'python' %}">Python</a></li>
+                </ul>
+            </li>
+            <li class="navigation-item"><a href="#">О нас</a></li>
         </ul>
-      </nav>
-      <img
-        src="{% static 'codelang/images/account.svg' %}"
-        alt="Личный кабинет"
-        class="personal-account"
-      />
-    </header>
-    {% block content %} {% endblock %}
-    <footer class="main-footer">&copy;Project For ManagePrgoramProjects</footer>
-  </body>
+    </nav>
+    <img
+            src="{% static 'codelang/images/account.svg' %}"
+            alt="Личный кабинет"
+            class="personal-account"
+    />
+</header>
+{% block content %} {% endblock %}
+<footer class="main-footer">&copy;Project For ManagePrgoramProjects</footer>
+</body>
 </html>
+{% for t in Topics %}
+<div>t.title</div>
+<div>t.content</div>
+{% endfor %}

@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a1604790-f20a-4b7b-a7fc-6f543d993cc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/static/codelang/css/mainstyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/static/codelang/css/mainstyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/python-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/python-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codolangua/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codolangua/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/templates/base.html" afterDir="false" />
     </list>
@@ -43,11 +47,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\static\codelang\images" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\static\codelang\css" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates\codelang" />
-      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua" />
     </key>
   </component>
   <component name="RunManager">
