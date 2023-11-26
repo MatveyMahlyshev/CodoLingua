@@ -9,6 +9,9 @@
     gap: 20px;
     margin: 0 60px;
 }
+.language-cards a {
+    display: block;
+}
 .language-cards-wrapper{
     display: flex;
     justify-content: center;

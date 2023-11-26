@@ -29,7 +29,7 @@
   </article>
   <div class="language-cards-wrapper">
     <section class="language-cards">
-      <div class="card python-card">
+      <a href="{% url 'python' %}" class="card python-card">
         <header class="card-header">
           <img
             src="{% static 'codelang/images/python-logo.svg' %}"
@@ -58,7 +58,7 @@
           включая отладку, тестирование, и многое другое. Это делает его очень
           полезным для разработки программного обеспечения.
         </p>
-      </div>
+      </a>
       <div class="example-py code-example">
         <pre>
         <code>
@@ -109,7 +109,7 @@
       </pre>
       </div>
 
-      <div class="card javascript-card">
+      <a class="card javascript-card">
         <header class="card-header">
           <img
             src="{% static 'codelang/images/js-logo.svg' %}"
@@ -137,8 +137,8 @@
           jQuery, React, Angular и другие. Они помогают упростить и ускорить
           процесс разработки, предоставляя готовые решения для различных задач.
         </p>
-      </div>
-      <div class="card HTML-and-CSS-card">
+      </a>
+      <a class="card HTML-and-CSS-card">
         <header class="card-header">
           <img
             src="{% static 'codelang/images/html-logo.svg' %}"
@@ -172,7 +172,7 @@
           веб-страниц, делая их интерактивными и привлекательными для
           пользователей.
         </p>
-      </div>
+      </a>
 
       <div class="example-html-css code-example">
         <pre>
@@ -215,4 +215,7 @@
     </section>
   </div>
 </main>
+{% endblock %}
+{% block scripts %} 
+  <script src="{% static 'codelang/js/textSlicer.js' %}"></script>
 {% endblock %}
