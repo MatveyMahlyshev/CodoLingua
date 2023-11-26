@@ -49,7 +49,7 @@ code{
 }
 .HTML-and-CSS-card{
     grid-area: html-css;
-    height: 100%;
+    height: 700px;
 }
 .example-py{
     grid-area: example-py;

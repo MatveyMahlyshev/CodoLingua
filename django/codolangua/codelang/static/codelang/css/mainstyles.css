@@ -85,13 +85,16 @@ header a {
     display: block;
 }
 .personal-account{
+    display: block;
     position: absolute;
     right: 50px;
-    width: 30px;
     background-color: #fff;
     padding: 5px;
     border-radius: 10px;
     height: auto;
+}
+.personal-account img{
+    width: 30px;
 }
 /* header end */
 /* main start */
@@ -118,6 +121,8 @@ header a {
 
 /* footer start */
 .main-footer {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

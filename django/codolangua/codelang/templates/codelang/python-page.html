@@ -1,11 +1,55 @@
-{% extends 'base.html' %} {%load static%}
-{% block link %}
-{%endblock%}
-{% block content %}
+{% extends 'base.html' %} {%load static%} {% block link %}
+<link
+  type="text/css"
+  href="{% static 'codelang/css/topics.css' %}"
+  rel="stylesheet"
+/>
+{%endblock%} {% block content %}
 <main>
-    {% for t in topics %}
-    <a href="#"><h2>{{ t.title }}</h2>
-        <span>{{ t.content}}</span></a>
-    {% endfor%}
+  <article class="lang-description">
+    <div class="lang-description-wrapper">
+      <div class="title-lang">
+        <img
+          src="{% static 'codelang/images/python-logo.svg' %}"
+          alt="python-logo-only"
+        />
+        <h1>Python</h1>
+      </div>
+      <p>
+        Python - это очень популярный и мощный язык программирования, который
+        широко используется для разработки веб-приложений, анализа данных,
+        машинного обучения и многих других задач. Python очень прост в изучении,
+        поскольку его синтаксис близок к английскому языку, что делает его
+        доступным для новичков. Он также имеет множество встроенных библиотек и
+        фреймворков, которые упрощают работу с базами данных, веб-разработкой,
+        машинным обучением и многому другому. Python использует динамическую
+        типизацию, что означает, что вы не обязаны объявлять тип переменной,
+        когда вы ее создаете. Это делает Python очень гибоким и позволяет писать
+        код быстрее. Python также поддерживает объектно-ориентированное
+        программирование, что означает, что вы можете создавать свои собственные
+        типы данных и использовать их в своих программах. Python имеет широкую
+        поддержку для разработки, включая отладку, тестирование, и многое
+        другое. Это делает его очень полезным для разработки программного
+        обеспечения
+        <pre>
+
+    Далее вы можете начать структурированное обучение языку
+
+        </pre>
+      </p>
+    </div>
+  </article>
+  <div class="topics-wrapper">
+    <ol>
+      {% for t in topics %}
+      <li class="topics-item">
+        <a href="#" class="topics">
+          <h2>{{ forloop.counter|add:"0" }}. {{ t.title }}</h2>
+          <!-- <div>{{ t.content }}</div> -->
+        </a>
+      </li>
+      {% endfor%}
+    </ol>
+  </div>
 </main>
 {% endblock %}
