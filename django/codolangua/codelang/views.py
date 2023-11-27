@@ -134,5 +134,9 @@ def show_html_css_page(request):
     return render(request, 'codelang/html-css-page.html', context=data)
 
 def show_topic_page(request):
-    data = {'title': f'Теория тема1'}
+    language = Language.objects.get(title='Python')
+    topics = Topic.objects.filter(programming_languages=language, pk=1)
+    print(topics)
+    data = {'title': f'Теория тема1',
+            'topics': topics}
     return render(request, 'codelang/topic-page.html', context=data)
