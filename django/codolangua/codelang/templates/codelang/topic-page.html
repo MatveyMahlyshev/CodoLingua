@@ -5,29 +5,44 @@
   rel="stylesheet"
 />
 {%endblock%} {% block content %}
-<aside class="topic-sections">
-  <div>
-    <ul class="subtopics-list">
-      {% for t in topics %}
-      <h3 class="topic-title">{{ t.topic_title }}</h3>
-      <a href="{% url 'python-topic' %}" class="topics">
-        <li class="subtopics">
-          <button class="">{{ t.topic_content }}</button>
-        </li>
-      </a>
-      {% endfor %}
-    </ul>
-    <hr />
-    <a href="#">
-      <img
-        src="{% static 'codelang/images/telegram.svg' %}"
-        alt="telegram-logo"
-        class="contact-telegram"
-    /></a>
-    <p>&copy;Вопросы, предложения, проклятья, пожелания</p>
-  </div>
-</aside>
-<main></main>
+<div class="page-content-wrapper">
+  <aside class="topic-sections">
+    <div>
+      <ul class="subtopics-list">
+        {% for t in topics %}
+        <h3 class="topic-title">{{ t.topic_title }}</h3>
+        <a href="{% url 'python-topic' %}" class="topics">
+          <li class="subtopics">
+            <button class="">{{ t.topic_content }}</button>
+          </li>
+        </a>
+        {% endfor %}
+      </ul>
+      <hr />
+      <a href="#">
+        <img
+          src="{% static 'codelang/images/telegram.svg' %}"
+          alt="telegram-logo"
+          class="contact-telegram"
+      /></a>
+      <p>&copy;Вопросы, предложения, проклятья, пожелания</p>
+    </div>
+  </aside>
+  <main>
+    <span class="fish">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quas
+      tempore aliquam dolorum minima autem sunt magnam quod! Sequi,
+      consequuntur. A ducimus nobis ex. Blanditiis minima commodi neque ea
+      itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+      amet quidem repellat aspernatur nisi iste temporibus, et vero, accusantium
+      tempore sequi accusamus eligendi cum aliquam laborum facere natus atque.
+      Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Cupiditate expedita reiciendis nisi qui adipisci error, eaque esse
+      recusandae sit debitis laborum! Dignissimos mollitia repellat nobis?
+      Voluptates consectetur vel id dolorem!Lorem
+    </span>
+  </main>
+</div>
 {%endblock%} {% block scripts %}
 <script src="{% static 'codelang/js/subtopicsInSideBar.js' %}"></script>
 {% endblock %}
