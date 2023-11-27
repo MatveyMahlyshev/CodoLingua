@@ -11,7 +11,7 @@ class Language(models.Model):
 class Topic(models.Model):
     topic_title = models.CharField(max_length=255, blank=False)
     topic_content = models.CharField(max_length=255, blank=False)
-    topic_slug = models.SlugField(max_length=255, unique=True,blank=False)
+    topic_slug = models.SlugField(max_length=255, blank=False, default='slug')
     programming_languages = models.ManyToManyField(Language, related_name='topic')
 
     def __str__(self):
