@@ -88,12 +88,13 @@ header a {
     position: absolute;
     right: 50px;
     background-color: #fff;
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     height: auto;
 }
 .personal-account img{
     width: 30px;
+    height: 100%;
 }
 /* header end */
 /* main start */
