@@ -13,6 +13,10 @@
                         src="{% static 'codelang/images/html-logo.svg' %}"
                         alt="html-logo"
                 />
+                <img
+                        src="{% static 'codelang/images/css-logo.svg' %}"
+                        alt="html-logo"
+                />
                 <h1>HTML/CSS</h1>
             </div>
             <p>
@@ -40,7 +44,7 @@
             <li class="topics-item">
                 <a href="#" class="topics">
                     <h2>{{ forloop.counter|add:"0" }}. {{ t.topic_title }}</h2>
-                    <div>{{ t.topic_content }}</div>
+                    <div>{{ t.topic_content|truncatewords:7 }}</div>
                 </a>
             </li>
             {% endfor%}

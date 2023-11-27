@@ -2,11 +2,10 @@
 .topics {
     display: block;
     margin-top: 0;
-    padding: 10px;
     padding-right: 40px;
     align-items: center;
 }
-.topics h2:hover{
+.topics:hover h2{
     text-decoration: underline;
 }
 .topics div{
@@ -19,6 +18,9 @@
     list-style-type: none;
 }
 .topics-item{
+    width: 500px;
+    height: 75px;
+    padding: 10px;
     background: linear-gradient(45deg, rgb(255, 188, 62), #f36223);
     border-radius: 10px;
 }
@@ -44,7 +46,6 @@
 .title-lang img {
     width: 75px;
     height: 100%;
-    margin-right: 20px;
 }
 .lang-description{
     display: flex;

@@ -132,3 +132,7 @@ def show_html_css_page(request):
     data = {'title': f'Теория {language.title}',
             'topics': topics}
     return render(request, 'codelang/html-css-page.html', context=data)
+
+def show_topic_page(request):
+    data = {'title': f'Теория тема1'}
+    return render(request, 'codelang/topic-page.html', context=data)
