@@ -13,6 +13,7 @@ class Topic(models.Model):
     topic_title = models.CharField(max_length=255, blank=False)
     topic_content = models.CharField(max_length=255, blank=False)
     topic_slug = models.SlugField(max_length=255, unique=True, db_index=True)
+    topic_text = models.TextField(blank=True)
     programming_languages = models.ManyToManyField(Language, related_name='topic')
 
     def __str__(self):

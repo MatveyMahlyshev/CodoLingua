@@ -136,15 +136,22 @@ def show_html_css_page(request):
 
 def show_topic_page(request, python_slug):
     topic = get_object_or_404(Topic, topic_slug=python_slug)
+    t = {}
+    i = 1
+    for paragraphs in topic.topic_text.splitlines():
+        t[f'paragraph{i}'] = paragraphs
+        i += 1
+    print(t)
+
     if python_slug == 'introduction-to-python':
         data = {'title': topic.topic_title,
                 'topics': topic,
-                'text': 'Hello',
+                'text': t,
                 }
     else:
         data = {'title': topic.topic_title,
                 'topics': topic,
-                'text': 'Bye',
+                'text': 'hello',
                 }
 
     return render(request, 'codelang/topic-page.html', context=data)
