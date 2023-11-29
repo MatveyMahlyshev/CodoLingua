@@ -9,14 +9,12 @@
   <aside class="topic-sections">
     <div>
       <ul class="subtopics-list">
-        {% for t in topics %}
-        <h3 class="topic-title">{{ t.topic_title }}</h3>
-        <a href="{% url 'python-topic' %}" class="topics">
+        <h3 class="topic-title">{{ topics.topic_title }}</h3>
+        <a href="{{topics.get_absolute_url}}" class="topics">
           <li class="subtopics">
-            <button class="">{{ t.topic_content }}</button>
+            <button class="">{{ topics.topic_content }}</button>
           </li>
         </a>
-        {% endfor %}
       </ul>
       <hr />
       <a href="#">
@@ -29,6 +27,7 @@
     </div>
   </aside>
   <main>
+    {{text}}
   </main>
 </div>
 {%endblock%} {% block scripts %}

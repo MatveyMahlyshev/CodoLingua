@@ -37,7 +37,7 @@
   <div class="topics-wrapper">
     <ol class="topics-list">
       {% for t in topics %}
-      <a href="{% url 'python-topic' %}" class="topics">
+      <a href="{{ t.get_absolute_url }}" class="topics">
       <li class="topics-item">
           <h2>{{ forloop.counter|add:"0" }}. {{ t.topic_title }}</h2>
           <div>{{ t.topic_content }}</div>

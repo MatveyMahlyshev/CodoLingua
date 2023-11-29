@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 
 from codelang.models import Topic, Language
@@ -133,10 +133,18 @@ def show_html_css_page(request):
             'topics': topics}
     return render(request, 'codelang/html-css-page.html', context=data)
 
-def show_topic_page(request):
-    language = Language.objects.get(title='Python')
-    topics = Topic.objects.filter(programming_languages=language, pk=1)
-    print(topics)
-    data = {'title': f'Теория тема1',
-            'topics': topics}
+
+def show_topic_page(request, python_slug):
+    topic = get_object_or_404(Topic, topic_slug=python_slug)
+    if python_slug == 'introduction-to-python':
+        data = {'title': topic.topic_title,
+                'topics': topic,
+                'text': 'Hello',
+                }
+    else:
+        data = {'title': topic.topic_title,
+                'topics': topic,
+                'text': 'Bye',
+                }
+
     return render(request, 'codelang/topic-page.html', context=data)
