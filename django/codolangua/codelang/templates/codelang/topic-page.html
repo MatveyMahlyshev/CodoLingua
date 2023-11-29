@@ -27,8 +27,9 @@
         </div>
     </aside>
     <main>
-        <p>{{text.paragraph1}}</p>
-        <p>{{text.paragraph2}}</p>
+        {% for key, value in text.items %}
+        <p>{{ value }}</p>
+        {% endfor %}
     </main>
 </div>
 {%endblock%} {% block scripts %}
