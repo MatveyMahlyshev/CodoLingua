@@ -1,36 +1,56 @@
 {% extends 'base.html' %} {%load static%} {% block link %}
 <link
-        type="text/css"
-        href="{% static 'codelang/css/topicPage.css' %}"
-        rel="stylesheet"
+  type="text/css"
+  href="{% static 'codelang/css/topicPage.css' %}"
+  rel="stylesheet"
 />
 {%endblock%} {% block content %}
 <div class="page-content-wrapper">
-    <aside class="topic-sections">
-        <div>
-            <ul class="subtopics-list">
-                <h3 class="topic-title">{{ topics.topic_title }}</h3>
-                <a href="{{topics.get_absolute_url}}" class="topics">
-                    <li class="subtopics">
-                        <button class="">{{ topics.topic_content }}</button>
-                    </li>
-                </a>
-            </ul>
-            <hr/>
-            <a href="#">
-                <img
-                        src="{% static 'codelang/images/telegram.svg' %}"
-                        alt="telegram-logo"
-                        class="contact-telegram"
-                /></a>
-            <p>&copy;Вопросы, предложения, проклятья, пожелания</p>
-        </div>
-    </aside>
-    <main>
-        {% for key, value in text.items %}
-        <p>{{ value }}</p>
-        {% endfor %}
-    </main>
+  <aside class="topic-sections">
+    <div>
+      <ul class="subtopics-list">
+        <h3 class="topic-title">{{ topics.topic_title }}</h3>
+        <a href="{{topics.get_absolute_url}}" class="topics">
+          <li class="subtopics">
+            <button class="">{{ topics.topic_content }}</button>
+          </li>
+        </a>
+      </ul>
+      <hr />
+      <a href="#">
+        <img
+          src="{% static 'codelang/images/telegram.svg' %}"
+          alt="telegram-logo"
+          class="contact-telegram"
+      /></a>
+      <p>&copy;Вопросы, предложения, проклятья, пожелания</p>
+    </div>
+  </aside>
+  <main>
+    {% for key, value in text.items %}
+    <p>{{ value }}</p>
+    <div class="code-example">
+      <header>
+        <span>python</span>
+        <span><button>copy</button></span>
+      </header>
+      <pre>
+        <code>
+        # Это комментарий
+        print("Hello, World!")  # Это тоже комментарий
+        
+        # Это функция, которая принимает два аргумента
+        def add_numbers(a, b):
+            return a + b
+        
+        # Используем функцию
+        result = add_numbers(5, 10)
+        print("The result is:", result)
+        </code>
+        </pre>
+    </div>
+    {% endfor %}
+  </main>
 </div>
 {%endblock%} {% block scripts %}
 <script src="{% static 'codelang/js/subtopicsInSideBar.js' %}"></script>

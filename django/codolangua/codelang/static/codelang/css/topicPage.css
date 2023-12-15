@@ -34,7 +34,38 @@ aside p{
     height: 100%;
 }
 main {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: white;
 }
 
+.code-example{
+    align-self: center;
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(39, 38, 38);
+}
+
+.code-example header{
+    display: flex;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    justify-content: space-between;
+    background-color: rgb(85, 85, 85);
+}
+.code-example button{
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+    padding: 2px 4px;
+    font-size: 14px;
+}
+.code-example button:hover{
+    background-color: rgb(110, 109, 109);
+}

@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.reg-title{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    transition: transform .9s ease-in-out;
+}
+.field:hover input{
+    transform: translateX(10px);
+}
+.field label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.field input{
+    border-radius: 5px;
+    height: 30px;
+    width: 400px;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.btn:nth-child(1){
+    background: #f36223;
+    opacity: 75%;
+}
+.btn:last-child{
+    background-color: lightgrey;
+}

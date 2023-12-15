@@ -155,3 +155,11 @@ def show_topic_page(request, python_slug):
                 }
 
     return render(request, 'codelang/topic-page.html', context=data)
+
+def show_registration_page(request):
+    data = {'title': 'Регистрация'}
+    return render(request, 'codelang/reg_form.html', context=data)
+
+def authorization(request):
+    data = {'title': 'Главная страница'}
+    return render(request, 'codelang/index.html', context=data)
