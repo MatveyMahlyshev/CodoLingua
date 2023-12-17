@@ -151,7 +151,7 @@ def show_topic_page(request, python_slug):
     else:
         data = {'title': topic.topic_title,
                 'topics': topic,
-                'text': 'hello',
+                'text': t,
                 }
 
     return render(request, 'codelang/topic-page.html', context=data)
