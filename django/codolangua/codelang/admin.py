@@ -14,6 +14,3 @@ class TopicAdmin(admin.ModelAdmin):
         return ", ".join([p.title for p in obj.programming_languages.all()])
 
 
-@admin.register(Language)
-class LanguageAdmin(admin.ModelAdmin):
-    list_display = ['title']

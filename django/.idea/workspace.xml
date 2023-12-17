@@ -7,8 +7,6 @@
     <list default="true" id="a1604790-f20a-4b7b-a7fc-6f543d993cc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codolangua/codelang/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codolangua/codolangua/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codolangua/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codolangua/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
