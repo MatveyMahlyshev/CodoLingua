@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a1604790-f20a-4b7b-a7fc-6f543d993cc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codolangua/codelang/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/python-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/python-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/templates/codelang/reg_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codelang/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codelang/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codolangua/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codolangua/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/codolangua/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/codolangua/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codolangua/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codolangua/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/codolangua/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -45,11 +49,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\users\templates\users" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\static\codelang\images" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates" />
       <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\static\codelang\css" />
-      <recent name="C:\Users\Matthew\Documents\GitHub\CodoLingua\django\codolangua\codelang\templates\codelang" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,5 +90,16 @@
       <updated>1699722711109</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
