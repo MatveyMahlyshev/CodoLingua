@@ -38,6 +38,7 @@ main {
     flex-direction: column;
     position: relative;
     background-color: white;
+    margin: 0 75px;
 }
 
 .code-example{
@@ -47,6 +48,7 @@ main {
     border-radius: 10px;
     color: white;
     background-color: rgb(39, 38, 38);
+    margin: 10px 0;
 }
 
 .code-example header{
@@ -68,4 +70,7 @@ main {
 }
 .code-example button:hover{
     background-color: rgb(110, 109, 109);
+}
+.topic-content{
+    font-size: 18px;
 }

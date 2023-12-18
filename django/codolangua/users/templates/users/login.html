@@ -1,13 +1,25 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<h1>Авторизация</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <p>
-        <button type="submit">Войти</button>
-    </p>
-</form>
-
+{% extends 'base.html' %} {%load static%} {% block link %}
+<link
+  type="text/css"
+  href="{% static 'codelang/css/reg-log-form.css' %}"
+  rel="stylesheet"
+/>
+{%endblock%} {% block content %}
+<main>
+  <div class="form-wrapper">
+    <h1>Авторизация</h1>
+    <form method="post">
+      {% csrf_token %}
+      <div class="login field">
+        {{ form.username.label_tag }} {{ form.username }}
+      </div>
+      <div class="password field">
+        {{ form.password.label_tag }} {{ form.password }}
+      </div>
+      <p>
+        <button type="submit" class="btn">Войти</button>
+      </p>
+    </form>
+  </div>
+</main>
 {% endblock %}

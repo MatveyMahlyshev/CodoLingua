@@ -17,11 +17,7 @@ def show_python_page(request):
     # for i in Topic.objects.filter(pk__gt=35):
     #     language.topic.add(i)
     i = 1
-    for slug in slugs.splitlines():
-
-        Topic.objects.filter(pk=i).update(topic_slug=slug)
-
-        i += 1
+    
     data = {'title': f'Теория {language.title}',
             'topics': topics}
     return render(request, 'codelang/python-page.html', context=data)
