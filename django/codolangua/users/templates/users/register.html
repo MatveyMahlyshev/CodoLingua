@@ -1,13 +1,45 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<h1>Регистрация</h1>
-
-<form method="post">
-    {% csrf_token %}
-    <input type="hidden" name="next" value="{{ next }}" />
-    {{ form.as_p }}
-    <p><button type="submit">Регистрация</button></p>
-</form>
-
+{% extends 'base.html' %} {%load static%} {% block link %}
+<link
+        type="text/css"
+        href="{% static 'codelang/css/reg-log-form.css' %}"
+        rel="stylesheet"
+/>
+{%endblock%} {% block content %}
+<main>
+    <div class="reg-title">
+        <span>Регистрация</span>
+    </div>
+    <div class="form-wrapper">
+        <form method="post">
+            {% csrf_token %}
+            <div class="login field">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+            </div>
+            <div class="email field">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="email field">
+                {{ form.first_name.label_tag }}
+                {{ form.first_name }}
+            </div>
+            <div class="email field">
+                {{ form.last_name.label_tag }}
+                {{ form.last_name }}
+            </div>
+            <div class="password field">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
+            <div class="repeat-password field">
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+            </div>
+            <div class="buttons">
+                <button type="submit" class="reg btn">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</main>
 {% endblock %}
