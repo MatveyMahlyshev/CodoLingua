@@ -40,14 +40,22 @@ def show_html_css_page(request):
 def show_topic_page(request, python_slug):
     topic = get_object_or_404(Topic, topic_slug=python_slug)
     t = {}
+    code = {}
     i = 1
     for paragraphs in topic.topic_text.split('&nbsp'):
         t[f'paragraph{i}'] = paragraphs
         i += 1
-    print(t)
+    i = 1
+    for code_lines in topic.topic_code.split('&nbsp'):
+        code[f'code{i}'] = code_lines
+        i += 1
+
+    print(code['code1'])
+
     data = {'title': topic.topic_title,
             'topics': topic,
             'text': t,
+            'code': code,
             }
 
     return render(request, 'codelang/topic-page.html', context=data)
