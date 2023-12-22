@@ -4,7 +4,7 @@ from .models import Language, Topic
 
 @admin.register(Topic)
 class TopicAdmin(admin.ModelAdmin):
-    fields = ['topic_title', 'topic_content', 'topic_slug', 'programming_languages', 'topic_text', 'topic_code']
+    fields = ['topic_title', 'topic_content', 'topic_slug', 'programming_languages', 'topic_text']
     list_display = ['topic_title', 'topic_content', 'topic_slug', 'get_programming_languages']
     list_display_links = ['topic_title']
     filter_vertical = ('programming_languages',)
