@@ -6,7 +6,6 @@
     margin-top: -50px;
     margin-bottom: -40px;
     background-color: rgb(62, 62, 62);
-    height: 100vh;
     padding: 20px;
     color: white;
 }
@@ -45,6 +44,7 @@ main {
     align-self: center;
     width: 550px;
     height: auto;
+    min-height: 250px;
     border-radius: 10px;
     color: white;
     background-color: rgb(39, 38, 38);
@@ -73,4 +73,5 @@ main {
 }
 .topic-content{
     font-size: 18px;
+    margin: 5px;
 }
