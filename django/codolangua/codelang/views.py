@@ -44,20 +44,19 @@ def show_topic_page(request, python_slug):
     t = {}
 
     i = 1
-    for paragraphs in topic.topic_text.split('&nbsp'):
-        t[f'paragraph{i}'] = paragraphs
-        i += 1
-    i = 1
-    code = []
-    for code_lines in topic.topic_code.split('&nbsp'):
-        if code_lines:
-            code.append(code_lines)
-    print(code[-1])
-    count = 0
+    j = 1
+    for paragraph in topic.topic_text.split('&nbsp'):
+        if '#Э' in paragraph:
+            t[f'code{j}'] = paragraph
+            j += 1
+        else:
+            t[f'paragraph{i}'] = paragraph
+            i += 1
+    print(t)
+
     data = {'title': topic.topic_title,
             'topics': topic,
             'text': t,
-            'code': code,
             }
 
     return render(request, 'codelang/topic-page.html', context=data)

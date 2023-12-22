@@ -28,8 +28,8 @@
     </aside>
    <main>
     {% for key, value in text.items %}
-        <p class="topic-content">{{ value }}</p>
-        {% if 'Пример ниже:' in value %}
+
+        {% if '#Э' in value %}
             <div class="code-example">
                 <header>
                     <span>python</span>
@@ -39,11 +39,12 @@
                 </header>
                 <pre>
                     <code>
-                        {{ code|get_next_code:forloop.counter|default:'' }}
+        {{value}}
                     </code>
                 </pre>
             </div>
-       {{ continue }}
+       {% else %}
+       <p class="topic-content">{{ value }}</p>
         {% endif %}
     {% endfor %}
 </main>
