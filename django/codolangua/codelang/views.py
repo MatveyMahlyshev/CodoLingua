@@ -1,6 +1,8 @@
+import json
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 from codelang.models import Topic, Language
 
@@ -40,18 +42,18 @@ def show_html_css_page(request):
 def show_topic_page(request, python_slug):
     topic = get_object_or_404(Topic, topic_slug=python_slug)
     t = {}
-    code = {}
+
     i = 1
     for paragraphs in topic.topic_text.split('&nbsp'):
         t[f'paragraph{i}'] = paragraphs
         i += 1
     i = 1
+    code = []
     for code_lines in topic.topic_code.split('&nbsp'):
-        code[f'code{i}'] = code_lines
-        i += 1
-
-    print(code['code1'])
-
+        if code_lines:
+            code.append(code_lines)
+    print(code[-1])
+    count = 0
     data = {'title': topic.topic_title,
             'topics': topic,
             'text': t,
