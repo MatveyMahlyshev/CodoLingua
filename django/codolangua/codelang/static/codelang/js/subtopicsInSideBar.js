@@ -17,7 +17,7 @@ subtopics.forEach(function(subtopic) {
         newDiv.classList.add('subtopic');
 
         // Записываем в него содержимое до ", "
-        newDiv.textContent = part.charAt(0).toUpperCase() + part.slice(1);;
+        newDiv.textContent = part.charAt(0).toUpperCase() + part.slice(1);
 
         // Добавляем новый div в текущую HTML-страницу
         subtopicsParent.appendChild(newDiv);

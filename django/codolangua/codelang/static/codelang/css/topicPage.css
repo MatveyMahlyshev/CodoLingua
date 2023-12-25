@@ -44,11 +44,13 @@ main {
     align-self: center;
     width: 550px;
     height: auto;
-    min-height: 250px;
     border-radius: 10px;
     color: white;
     background-color: rgb(39, 38, 38);
     margin: 10px 0;
+}
+.code-example pre{
+    margin: 0 10px;
 }
 
 .code-example header{
