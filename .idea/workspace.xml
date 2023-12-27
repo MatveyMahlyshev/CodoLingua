@@ -79,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1699722694087</updated>
       <workItem from="1703584099239" duration="919000" />
-      <workItem from="1703585033590" duration="469000" />
+      <workItem from="1703585033590" duration="994000" />
+      <workItem from="1703586040687" duration="134000" />
     </task>
     <servers />
   </component>
@@ -87,6 +88,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CodoLingua$Run.coverage" NAME="Run Coverage Results" MODIFIED="1703585125480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Семён\Documents\GitHub\CodoLingua\django\codolangua" />
+    <SUITE FILE_PATH="coverage/CodoLingua$Run.coverage" NAME="Run Coverage Results" MODIFIED="1703586017545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Семён\Documents\GitHub\CodoLingua\django\codolangua" />
   </component>
 </project>
